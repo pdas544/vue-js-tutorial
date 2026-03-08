@@ -64,3 +64,13 @@ var products = [
     }
 ];
  
+//create a variable to hold the data property of the Vue instance
+const selfServiceMachine = {
+    data(){
+        return {
+            message: "Welcome to McDonald's",
+        }
+    }
+}
+
+Vue.createApp(selfServiceMachine).mount('#app');
