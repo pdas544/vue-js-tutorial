@@ -25,3 +25,7 @@ const service = {
 - Use v-for directive to loop through the items
 - Use v-on or the @ at symbol to bind the events
 - Use the v-bind directive (aka :class) for binding classes for styling
+- Use the event modifier for stop propagation, for eg: @click.stop
+- attribute binding, for eg, `:disable = "product.quantity <=0"`
+- modifying behavior based on some condition using `v-if` directive, for eg: displaying quantity area only if the product is active `v-if=product.active`
+- using `<template v-if="product.active">` to group data
