@@ -29,3 +29,19 @@ const service = {
 - attribute binding, for eg, `:disable = "product.quantity <=0"`
 - modifying behavior based on some condition using `v-if` directive, for eg: displaying quantity area only if the product is active `v-if=product.active`
 - using `<template v-if="product.active">` to group data
+- to perform any complex logic use methods object inside the vue instance, for eg:
+`
+const service = {
+    data(){
+        return{
+            'message': 'Hello'
+        }
+    }
+},
+
+methods: {
+    total : function(){
+        //calculate total
+    }
+}
+`
