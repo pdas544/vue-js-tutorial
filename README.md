@@ -45,3 +45,12 @@ methods: {
     }
 }
 `
+
+### Two-Way Binding
+- send form input to an object using `v-model` directive.
+- for eg: 
+`
+<input name="fname" v-model="newMember.fname" />
+`
+- It is called as two-way binding because the modification works in both ways
+- from object to the form and vice-a-versa.
