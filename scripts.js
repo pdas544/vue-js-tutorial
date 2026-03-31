@@ -64,6 +64,20 @@ var products = [
   },
 ];
 
+var members = [
+  {
+    fname: "John",
+    lname: "Smith",
+    instrument: "Guitar",
+  },
+  {
+    fname: "Parker",
+    lname: "Smith",
+    instrument: "Bass",
+  },
+
+];
+
 //create a variable to hold the data property of the Vue instance
 const selfServiceMachine = {
   data() {
@@ -86,4 +100,27 @@ const selfServiceMachine = {
   }
 };
 
-Vue.createApp(selfServiceMachine).mount("#app");
+const bandExample = {
+  data(){
+    return{
+      members: members,
+      newMember:{
+        fname: "Kerry",
+        lname: "Johnson",
+        instrument: "Drums"
+      }
+    }
+  },
+  methods:{
+      addMember: function(){
+          if(this.newMember.fname && this.newMember.lname && this.newMember.instrument){  
+          this.members.push(this.newMember);
+          this.newMember = {};
+        }else{
+          alert("Please fill all the fields");
+        }
+    }
+  }
+};
+
+Vue.createApp(bandExample).mount("#app");
