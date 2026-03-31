@@ -49,7 +49,7 @@ methods: {
 ### Two-Way Binding
 - send form input to an object using `v-model` directive.
 - for eg: 
-`
+`git 
 <input name="fname" v-model="newMember.fname" />
 `
 - It is called as two-way binding because the modification works in both ways
