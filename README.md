@@ -54,3 +54,15 @@ methods: {
 `
 - It is called as two-way binding because the modification works in both ways
 - from object to the form and vice-a-versa.
+
+### Life-cycle Hooks
+- Reference `https://vuejs.org/guide/essentials/lifecycle.html`
+- avoid using arrow function for lifecycle hooks
+- hooks or events which gets triggered when the vue instance starts loading
+- beforeCreate(): before creating the instance
+- created(): after instance is created
+- beforeUpdate(): when the data changes
+- update(): when the data change is finished
+
+- todo.js: uses both created() hook for loading the saved content (tasks)
+- uses update() hook for reflecting the changes for done and clear operations.
